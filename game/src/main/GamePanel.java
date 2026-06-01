@@ -6,7 +6,6 @@ import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import javax.swing.*;
-import object.SuperObject;
 import tile.TileManager;
 
 public class GamePanel extends JPanel implements Runnable
@@ -35,7 +34,6 @@ public class GamePanel extends JPanel implements Runnable
     public CollisionChecker cChecker = new  CollisionChecker(this);
     public AssetSetter aSetter = new AssetSetter(this);
     public Player player = new Player(this,keyH);
-    public SuperObject obj[] = new SuperObject[10];
 
     int FPS =30 ;
 
